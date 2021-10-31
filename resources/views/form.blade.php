@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.9/sweetalert2.min.js"></script>
     <title>Document</title>
 </head>
-    <body style="background-color: lightgray;">
+    <body style="background-color: rgb(205, 214, 214); font-family: arial">
       <script src="{{asset('js/users.js')}}"></script>
         <div class="container col-md-12" style="margin-top: 10px; margin-left: 10px;">
           <div class="col-md-12 align-self-center">
@@ -20,6 +20,7 @@
             <div class="row offset-md-6">
               <h2>Cadastro de Usuário</h2>
             </div>
+            <br>
             {!! Form::open(['url' => url('/index'), 'method' => 'GET', 'id' => 'form-id']) !!}
               @csrf
               
