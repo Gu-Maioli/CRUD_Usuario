@@ -159,9 +159,9 @@
                             showConfirmButton: true
                         });
                     }
+                    setTimeout(function(){ location.reload() }, 2000);
                 }
             })
-            location.reload();
         });
         </script>
     </body>

@@ -2,6 +2,7 @@ var userEdit = [];
 
 function excluirUser(id)
 {
+    event.preventDefault();
     swal({
         title: 'Excluir',
         html: 'Deseja Excluir o Usuário?',
@@ -36,11 +37,11 @@ function excluirUser(id)
                             showConfirmButton: true
                         });
                     }
+                    setTimeout(function(){ location.reload() }, 2000);
                 }
             })
         }
     });
-    location.reload();
 }
 
 function cancelar()
